@@ -1,5 +1,7 @@
 {
   "name": "ionic4-background-video-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

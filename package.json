@@ -4,6 +4,12 @@
   "author": "Geek Learning",
   "homepage": "https://geeklearning.io",
   "scripts": {
+    "io:serve": "ionic serve",
+    "ios:serve": "ionic cordova run ios -l -- --buildFlag=\"-UseModernBuildSystem=0\"",
+    "ios:build": "ionic cordova build ios -- --buildFlag=\"-UseModernBuildSystem=0\"",
+    "android:serve": "ionic cordova run android -l",
+    "android:build": "ionic cordova build android",
+    "android:install": "adb install -r platforms/android/app/build/outputs/apk/debug/app-debug.apk",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -24,7 +30,16 @@
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.0.0",
+    "cordova-android": "7.1.4",
+    "cordova-ios": "4.5.5",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.1.3",
+    "cordova-plugin-ionic-webview": "^3.1.2",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
     "core-js": "^2.5.4",
+    "gl-ionic-background-video": "0.0.5",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.29"
   },
@@ -54,5 +69,19 @@
     "tslint": "~5.12.0",
     "typescript": "~3.1.6"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
 }
