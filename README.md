@@ -6,7 +6,7 @@ This is an Ionic 4 demo app to show how to get a perfectly working Home Page wit
 </p>
 
 
-This is mainly used as a demo project for an article I wrote on our blog:
+This is mainly used as a demo project for an article I wrote on our blog: https://geeklearning.io/how-to-create-a-home-page-with-a-video-background-in-ionic-4/
 
 ## How to use
 
