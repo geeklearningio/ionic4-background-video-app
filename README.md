@@ -1,7 +1,12 @@
 # ionic4-background-video-app
 This is an Ionic 4 demo app to show how to get a perfectly working Home Page with a background video playing.
 
-I've made an article about it explaining all in details: 
+<p align="center">
+  <img src="https://i.imgur.com/jdboGAV.png"></img>
+</p>
+
+
+This is mainly used as a demo project for an article I wrote on our blog:
 
 ## How to use
 
